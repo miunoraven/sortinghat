@@ -1,0 +1,92 @@
+body{
+    margin:0;
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+
+    background-image: url("../images/hogwards.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+
+    font-family: 'Cinzel', serif;
+    font-size: 15pt;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.8);
+    width: 35%;
+    height: 45%;
+    padding: 50px 50px;
+    border-radius: 10pt;
+}
+
+h1{
+    font-family: 'Harry Potter', sans-serif;
+    margin: 10px;
+    color: rgb(45, 48, 51);
+    font-size: 50pt;
+    text-shadow: 0 0 3px white;                                             
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.pair{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+input, select, textarea{
+    display: inline-block;
+    font-size: 12pt;
+    font-family: 'Cinzel', serif;
+    width: 70%;
+    padding: 10px 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 10pt;
+    outline: none;
+    border: 1px solid slategrey;
+    box-shadow: 0 0 10px black;
+}
+
+#age{
+    width: 40%;
+}
+
+#description
+{
+    height: 65%;
+}
+.input_description{
+    height: 200px;
+}
+
+#submit{
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Cinzel', serif;
+    background-color: slategrey;
+    color: white;
+}
+
+#submit:hover{
+    background-color: white;
+    color: slategrey;
+}

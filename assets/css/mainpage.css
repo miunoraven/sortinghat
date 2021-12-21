@@ -1,0 +1,61 @@
+body{
+    margin:0;
+    height: 100vh;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("../images/hogwards.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Cinzel', serif;    
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    font-family: 'Harry Potter', sans-serif;
+    color: rgb(45, 48, 51);
+    font-size: 55pt;
+    text-shadow: 0 0 3px white;
+    margin-top: 100px;                                             
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+
+p{
+    color: white;
+    font-size: 18pt;
+    text-align: center;
+    font-weight: 500;
+    text-shadow: 0 0 8px rgb(45, 48, 51);
+    margin-top: 50px;
+    width: 40%;
+}
+
+.buttons a{
+    outline: none;
+    border: 1px solid slategrey;
+    box-shadow: 0 0 10px white;
+    background-color: slategrey;
+    border-radius: 7pt;
+    color: white;
+    padding: 15px 32px;
+    font-size: 20pt;
+    text-decoration: none;
+    margin: 50px 10px;
+}
+
+.buttons a:hover{
+    background-color: white;
+    color: grey;
+}
+
+#sortinghat{
+    width: 300px;
+    height: auto;
+    margin-top: 50px;
+}

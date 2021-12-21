@@ -1,0 +1,93 @@
+body{
+    margin:0;
+    height: 100vh;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("../images/hogwards.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Cinzel', serif;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
+    font-family: 'Harry Potter', sans-serif;
+    color: rgb(45, 48, 51);
+    font-size: 50pt;
+    text-shadow: 0 0 5px white;
+    margin-top: 0px;  
+    margin-bottom: 20px;                                        
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.8);
+    width: 45%;
+    height: 55%;
+    padding: 50px 50px;
+    border-radius: 10pt;
+}
+
+p{
+    color: rgb(45, 48, 51);
+    font-size: 18pt;
+    text-align: center;
+    font-weight: 500;
+    text-shadow: 0 0 8px black;
+    width: 40%;
+    margin: 0px;
+}
+
+form, .results{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#first, #second{
+    width: 80%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px 30px;
+}
+
+input, .percentage, a{
+    display: inline-block;
+    font-size: 15pt;
+    font-family: 'Cinzel', serif;
+    width: 100%;
+    padding: 10px 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    outline: none;
+    border: 1px solid slategrey;
+    box-shadow: 0 0 10px white;
+    background-color: slategrey;
+    border-radius: 7pt;
+    color: white;
+}
+
+.next_button{
+    width: 30%;
+    text-align: center;
+}
+
+#no_wizards{
+    width: 15%;
+    text-align: center;
+}
+
+input:hover, a:hover{
+    background-color: white;
+    color: grey;
+}
