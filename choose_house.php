@@ -11,7 +11,7 @@
     <body>
         <?php
             include "database/database.php";
-            include "show_wizard.php";
+            include "get_wizard.php";
             if($row){?>
             <div class="content">
                 <h1> <?php echo $firstname . " " . $lastname;?></h1>

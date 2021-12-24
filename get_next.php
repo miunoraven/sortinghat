@@ -12,7 +12,7 @@
         <div class="content">
         <?php
             require "database/database.php";
-            include "show_wizard.php"; ?>
+            include "get_wizard.php"; ?>
 
             <h1> <?php echo $firstname . " " . $lastname;?></h1>
                 <p> 
