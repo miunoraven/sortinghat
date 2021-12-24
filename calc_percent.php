@@ -4,7 +4,7 @@
     $gryff = getHouseVote("gryffindor", $id);
     $raven = getHouseVote("ravenclaw", $id);
     $huffle = getHouseVote("hufflepuff", $id);
-    $total = $slyth + $gryff + $huffle + $raven;
+    $total = $slyth + $gryff + $huffle + $raven; //get total amount of votes and calculate every percentage
     ?>
     <div class="results">
         <div id="first">

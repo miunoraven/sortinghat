@@ -12,9 +12,9 @@
         <div class="content">
         <?php
             require "database/database.php";
-            include "get_wizard.php"; ?>
+            include "get_wizard.php"; //get the data per wizard ?> 
 
-            <h1> <?php echo $firstname . " " . $lastname;?></h1>
+            <h1> <?php echo $firstname . " " . $lastname;?></h1> <!-- print names etc per wizard -->
                 <p> 
                 <?php 
                     if($gender == "f"){
@@ -28,7 +28,7 @@
                     echo "<p>" . $description . "</p>";
                     
 
-            if (isset($_POST["gryffindor"])) {
+            if (isset($_POST["gryffindor"])) { // add vote to the chosen house
                 changeData($id, "gryffindor");
             }
             else if (isset($_POST["slytherin"])) {
@@ -41,10 +41,10 @@
                 changeData($id, "hufflepuff");
             }   
 
-            include "calc_percent.php";
+            include "calc_percent.php"; //calculate the percentage per house and print the result 
             $next = mysqli_query($conn, "SELECT * FROM wizard WHERE id>\"$id\" order by id ASC");
 
-            if($row = mysqli_fetch_array($next))
+            if($row = mysqli_fetch_array($next)) //get the next wizard
             {
                 
                 echo '<a href="choose_house.php?id='. $row["id"] . '" class="next_button">Next wizard</a>';  

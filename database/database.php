@@ -3,7 +3,7 @@
 //adds a new user to the database
 function addData($users){
     //connecting to database
-    require "database_call.php";
+    require "database_call.php"; //calls database
 
     //gets all values from form input
     $id = count($users);
@@ -26,7 +26,7 @@ function addData($users){
     $conn->close();
 }
 
-function changeData($id, $house){
+function changeData($id, $house){ //puts the votes in the houses
 
     require "database_call.php";
     $number_sql = "SELECT $house FROM wizard WHERE id = \"$id\";";
@@ -40,7 +40,7 @@ function changeData($id, $house){
 
 }
 
-function getAllData(){
+function getAllData(){ //gets all the wizards
 
     require "database_call.php";
     $users = [];
@@ -53,7 +53,7 @@ function getAllData(){
     return $users;
 }
 
-function getHouseVote($house, $id){
+function getHouseVote($house, $id){ //get the votes
     require "database_call.php";
     $sql = "SELECT $house FROM wizard WHERE id = \"$id\";";
     $votes = mysqli_query($conn, $sql)->fetch_all(MYSQLI_ASSOC);

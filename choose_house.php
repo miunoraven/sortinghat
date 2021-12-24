@@ -14,7 +14,7 @@
             include "get_wizard.php";
             if($row){?>
             <div class="content">
-                <h1> <?php echo $firstname . " " . $lastname;?></h1>
+                <h1> <?php echo $firstname . " " . $lastname;?></h1> <!-- print names etc per wizard -->
                     <p> 
                     <?php 
                         if($gender == "f"){
@@ -41,7 +41,7 @@
         <?php
         }
         else{ ?>
-            <h1>There are no wizards yet</h1>
+            <h1>There are no wizards yet</h1> <!-- in case the database is empty -->
             <a href="create_account.php" id="no_wizards">Add wizards</a>
         <?php } ?>
     </body>
