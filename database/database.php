@@ -18,7 +18,7 @@ function addData($users){
 
     //display completionpage if succeeded
     if ($conn->query($sql) === TRUE) {
-        header('Location: http://localhost/added_account.php');
+        header('Location: http://sortinghat.miunoraven.be/added_account.php');
     } 
     else {
         echo "Error: " . $sql . "<br>" . $conn->error;
